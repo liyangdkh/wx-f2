@@ -1,6 +1,9 @@
 
 import F2 from '@antv/f2';
 
+const PieLabel = require('@antv/f2/lib/plugin/pie-label');
+F2.Chart.plugins.register([PieLabel]);
+
 function wrapEvent(e) {
   if (!e) return;
   if (!e.preventDefault) {
